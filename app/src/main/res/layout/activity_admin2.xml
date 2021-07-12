@@ -1,0 +1,277 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".Admin2">
+
+    <LinearLayout
+        android:id="@+id/l1"
+        android:layout_width="match_parent"
+        android:layout_height="150dp"
+        android:background="@color/purple_200"
+        android:orientation="vertical"
+        tools:ignore="MissingConstraints">
+
+        <TextView
+            android:id="@+id/prn1"
+            android:layout_marginTop="15dp"
+            android:layout_width="match_parent"
+            android:layout_height="45dp"
+            android:text="1903079"
+            android:textSize="25sp"
+            android:textColor="@color/white"
+            android:gravity="center"/>
+
+        <TextView
+
+            android:id="@+id/hostel1"
+            android:layout_width="match_parent"
+            android:layout_height="40dp"
+            android:text=""
+            android:textSize="20sp"
+            android:textColor="@color/white"
+            android:gravity="center" />
+
+        <TextView
+            android:id="@+id/date1"
+            android:layout_width="match_parent"
+            android:layout_height="40dp"
+            android:text="HOSTEL - C"
+            android:textSize="25sp"
+            android:textColor="@color/white"
+            android:gravity="center" />
+
+    </LinearLayout>
+
+    <LinearLayout
+        app:layout_constraintTop_toBottomOf="@+id/l1"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+        <ScrollView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+        <TableLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:stretchColumns="1,2">
+
+            <TableRow
+                android:background="#C3F44E">
+
+                <TextView
+                    android:text="TYPE"
+                    android:textSize="20sp"
+                    android:textColor="@color/black"
+                    android:gravity="center"
+                    android:layout_gravity=""
+                    android:layout_column="1"
+                    android:padding="10dp"/>
+
+                <TextView
+                    android:text="COUNT"
+                    android:textSize="20sp"
+                    android:textColor="@color/black"
+                    android:layout_column="1"
+                    android:gravity="center"
+                    android:padding="10dp" />
+
+            </TableRow>
+
+            <TableRow
+
+                android:background="@color/purple_200">
+
+                <TextView
+                    android:text="SHIRTS"
+                    android:textSize="18sp"
+                    android:textColor="@color/white"
+                    android:gravity="center"
+                    android:layout_gravity=""
+                    android:layout_column="1"
+                    android:padding="5dp"/>
+
+                <EditText
+                    android:id="@+id/shirts1"
+                    android:textSize="18sp"
+                    android:inputType="number"
+                    android:textColor="@color/black"
+                    android:layout_column="1"
+                    android:gravity="center"
+                    android:padding="5dp" />
+
+            </TableRow>
+
+            <TableRow
+
+                android:background="@color/purple_200">
+
+                <TextView
+                    android:text="PANTS"
+                    android:textSize="18sp"
+                    android:textColor="@color/white"
+                    android:gravity="center"
+                    android:layout_gravity=""
+                    android:layout_column="1"
+                    android:padding="5dp"/>
+
+                <EditText
+                    android:id="@+id/pants1"
+                    android:textSize="18sp"
+                    android:inputType="number"
+                    android:textColor="@color/black"
+                    android:layout_column="1"
+                    android:gravity="center"
+                    android:padding="5dp" />
+
+            </TableRow>
+
+            <TableRow
+
+                android:background="@color/purple_200">
+
+                <TextView
+                    android:text="BEDSHEET"
+                    android:textSize="18sp"
+                    android:textColor="@color/white"
+                    android:gravity="center"
+                    android:layout_gravity=""
+                    android:layout_column="1"
+                    android:padding="5dp"/>
+
+                <EditText
+                    android:id="@+id/bedsheet1"
+                    android:textSize="18sp"
+                    android:inputType="number"
+                    android:textColor="@color/black"
+                    android:layout_column="1"
+                    android:gravity="center"
+                    android:padding="5dp" />
+
+            </TableRow>
+
+            <TableRow
+
+                android:background="@color/purple_200">
+
+                <TextView
+                    android:text="TOWEL"
+                    android:textSize="18sp"
+                    android:textColor="@color/white"
+                    android:gravity="center"
+                    android:layout_gravity=""
+                    android:layout_column="1"
+                    android:padding="5dp"/>
+
+                <EditText
+                    android:id="@+id/towel1"
+                    android:textSize="18sp"
+                    android:inputType="number"
+                    android:textColor="@color/black"
+                    android:layout_column="1"
+                    android:gravity="center"
+                    android:padding="5dp" />
+
+            </TableRow>
+
+            <TableRow
+
+                android:background="@color/purple_200">
+
+                <TextView
+                    android:text="BLANKET"
+                    android:textSize="18sp"
+                    android:textColor="@color/white"
+                    android:gravity="center"
+                    android:layout_gravity=""
+                    android:layout_column="1"
+                    android:padding="5dp"/>
+
+                <EditText
+                    android:id="@+id/blanket1"
+                    android:textSize="18sp"
+                    android:inputType="number"
+                    android:textColor="@color/black"
+                    android:layout_column="1"
+                    android:gravity="center"
+                    android:padding="5dp" />
+
+            </TableRow>
+            <TableRow
+
+                android:background="@color/purple_200">
+
+                <TextView
+                    android:text="PILLOW COVER"
+                    android:textSize="18sp"
+                    android:textColor="@color/white"
+                    android:gravity="center"
+                    android:layout_gravity=""
+                    android:layout_column="1"
+                    android:padding="5dp"/>
+
+                <EditText
+                    android:id="@+id/pillow1"
+                    android:textSize="18sp"
+                    android:inputType="number"
+                    android:textColor="@color/black"
+                    android:layout_column="1"
+                    android:gravity="center"
+                    android:padding="5dp" />
+
+            </TableRow>
+
+
+            <TableRow
+                android:background="#C3F44E"
+                android:layout_marginTop="10dp">
+
+                <TextView
+                    android:id="@+id/ctotal"
+                    android:text="TOTAL"
+                    android:textSize="23sp"
+                    android:textColor="@color/black"
+                    android:background="#AC9997"
+                    android:gravity="center"
+                    android:layout_gravity=""
+                    android:layout_column="1"
+                    android:padding="10dp"/>
+
+                <TextView
+                    android:id="@+id/total1"
+                    android:text=""
+                    android:textSize="23sp"
+                    android:textColor="@color/black"
+                    android:layout_column="1"
+                    android:gravity="center"
+                    android:padding="10dp" />
+
+            </TableRow>
+
+
+
+
+
+
+        </TableLayout>
+
+        </ScrollView>
+
+
+    </LinearLayout>
+
+
+<Button
+    android:id="@+id/addcloth"
+    android:layout_width="match_parent"
+    android:layout_height="50dp"
+    android:text="ADD"
+    android:textSize="23sp"
+    android:background="#EDFD9439"
+    app:layout_constraintBottom_toBottomOf="parent">
+
+</Button>
+
+</androidx.constraintlayout.widget.ConstraintLayout>

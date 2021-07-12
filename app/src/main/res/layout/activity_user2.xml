@@ -1,0 +1,140 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#2C2B3F"
+    tools:context=".User2">
+
+
+    <LinearLayout
+        android:id="@+id/linearLayout3"
+        android:layout_width="match_parent"
+        android:layout_height="200dp"
+        android:background="#2C2B3F"
+        android:gravity="center"
+        android:orientation="horizontal"
+        app:layout_constraintStart_toStartOf="parent"
+        tools:ignore="MissingConstraints">
+
+
+        <ImageView
+            android:layout_width="60dp"
+            android:layout_height="60dp"
+            android:layout_marginRight="9dp"
+            android:src="@drawable/logoo" />
+
+        <TextView
+            android:id="@+id/link"
+            android:layout_width="wrap_content"
+            android:layout_height="80dp"
+            android:text="OYSTER KODE"
+            android:padding="20dp"
+            android:fontFamily="@font/changa"
+            android:gravity="center"
+            android:textStyle="bold"
+            android:textColor="@color/white"
+            android:textSize="25sp"/>
+
+
+
+    </LinearLayout>
+
+
+    <LinearLayout
+        android:id="@+id/linearLayout4"
+        android:layout_width="match_parent"
+        android:layout_height="250dp"
+        android:orientation="vertical"
+        android:background="#2C2B3F"
+        android:gravity="center"
+        app:layout_constraintTop_toBottomOf="@+id/linearLayout3"
+        tools:ignore="MissingConstraints">
+
+
+        <ImageView
+            android:id="@+id/fireimage"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"/>
+
+
+
+        <ImageView
+            android:id="@+id/gif"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            app:layout_constraintBottom_toTopOf="@+id/linearLayout2"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent" />
+
+
+
+    </LinearLayout>
+
+
+    <TextView
+        android:id="@+id/noti1"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentRight="true"
+        android:marqueeRepeatLimit="marquee_forever"
+        android:scrollHorizontally="true"
+        android:textSize="22sp"
+        android:singleLine="true"
+        android:text="NOTICE"
+        android:textColor="#FFB401"
+        app:layout_constraintBottom_toTopOf="@+id/about"
+        app:layout_constraintTop_toBottomOf="@+id/linearLayout4"
+        app:layout_constraintVertical_bias="0.593"
+        tools:ignore="MissingConstraints"
+       />
+
+    <Button
+        android:id="@+id/go"
+        android:layout_width="match_parent"
+        android:layout_height="60dp"
+        android:layout_marginBottom="80dp"
+        app:backgroundTint="#35B5AD"
+        app:layout_constraintBottom_toBottomOf="parent"
+        tools:ignore="MissingConstraints"
+        android:text="GO TO LAUNDRY"
+        android:textSize="20sp"
+        android:textStyle="bold"
+        tools:layout_editor_absoluteX="-16dp">
+    </Button>
+
+
+
+    <Button
+        android:visibility="gone"
+        android:id="@+id/about"
+        android:layout_width="match_parent"
+        android:layout_height="60dp"
+        android:layout_marginBottom="80dp"
+        android:text="ABOUT US"
+        android:textSize="20sp"
+        android:textStyle="bold"
+        app:backgroundTint="#35B5AD"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/linearLayout4"
+        tools:ignore="MissingConstraints"
+        tools:layout_editor_absoluteX="-16dp">
+    </Button>
+
+    <ProgressBar
+        android:visibility="gone"
+        android:id="@+id/pro"
+        android:layout_width="match_parent"
+        android:layout_height="60dp"
+        android:layout_marginBottom="80dp"
+        app:backgroundTint="#35B5AD"
+        tools:ignore="MissingConstraints"
+        android:text="GO TO LAUNDRY"
+        android:textSize="20sp"
+        android:textStyle="bold">
+    </ProgressBar>
+
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>

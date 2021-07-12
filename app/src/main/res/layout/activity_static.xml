@@ -1,0 +1,304 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:background="#2C2B3F"
+    android:layout_height="match_parent"
+    tools:context=".StaticActivity">
+
+    <LinearLayout
+        android:id="@+id/l1"
+        android:layout_width="match_parent"
+        android:layout_height="150dp"
+        android:background="#2C2B3F"
+        android:orientation="vertical"
+        app:layout_constraintStart_toStartOf="parent"
+        tools:ignore="MissingConstraints">
+
+
+
+
+        <TextView
+            android:id="@+id/prn2"
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:layout_marginTop="70dp"
+            android:gravity="center"
+            android:text="1903079"
+            android:textColor="@color/white"
+            android:background="#2C2B3F"
+            android:textSize="25sp"
+            />
+
+
+
+    </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/tab"
+            app:layout_constraintTop_toBottomOf="@+id/l1"
+            android:layout_width="match_parent"
+            android:layout_marginTop="80dp"
+            android:layout_height="wrap_content">
+            <ScrollView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <TableLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+
+                    android:stretchColumns="1,2"
+                    >
+
+                    <TableRow
+                        android:background="#C3F44E">
+
+                        <TextView
+                            android:text="TYPE"
+                            android:textSize="20sp"
+                            android:textColor="@color/black"
+                            android:gravity="center"
+                            android:layout_gravity=""
+                            android:layout_column="1"
+                            android:padding="10dp"/>
+
+                        <TextView
+                            android:text="COUNT"
+                            android:textSize="20sp"
+                            android:textColor="@color/black"
+                            android:layout_column="1"
+                            android:gravity="center"
+                            android:padding="10dp" />
+
+                    </TableRow>
+
+                    <TableRow
+
+                        android:background="#2C2B3F">
+
+                        <TextView
+                            android:text="SHIRTS"
+                            android:textSize="18sp"
+                            android:textColor="@color/white"
+                            android:gravity="center"
+                            android:layout_gravity=""
+                            android:layout_column="1"
+                            android:padding="5dp"/>
+
+                        <TextView
+                            android:id="@+id/shirts1"
+                            android:textSize="18sp"
+                            android:inputType="number"
+                            android:textColor="@color/white"
+                            android:layout_column="1"
+                            android:gravity="center"
+                            android:backgroundTint="@color/white"
+                            android:padding="5dp" />
+
+                    </TableRow>
+
+                    <TableRow
+
+                        android:background="#2C2B3F">
+
+                        <TextView
+                            android:text="PANTS"
+                            android:textSize="18sp"
+                            android:textColor="@color/white"
+                            android:gravity="center"
+                            android:layout_gravity=""
+                            android:layout_column="1"
+                            android:padding="5dp"/>
+
+                        <TextView
+                            android:id="@+id/pants1"
+                            android:textSize="18sp"
+                            android:inputType="number"
+                            android:textColor="@color/white"
+                            android:layout_column="1"
+                            android:gravity="center"
+                            android:padding="5dp" />
+
+                    </TableRow>
+
+                    <TableRow
+
+                        android:background="#2C2B3F">
+
+                        <TextView
+                            android:text="BEDSHEET"
+                            android:textSize="18sp"
+                            android:textColor="@color/white"
+                            android:gravity="center"
+                            android:layout_gravity=""
+                            android:layout_column="1"
+                            android:padding="5dp"/>
+
+                        <TextView
+                            android:id="@+id/bedsheet1"
+                            android:textSize="18sp"
+                            android:inputType="number"
+                            android:textColor="@color/white"
+                            android:layout_column="1"
+                            android:gravity="center"
+                            android:padding="5dp" />
+
+                    </TableRow>
+
+                    <TableRow
+
+                        android:background="#2C2B3F">
+
+                        <TextView
+                            android:text="TOWEL"
+                            android:textSize="18sp"
+                            android:textColor="@color/white"
+                            android:gravity="center"
+                            android:layout_gravity=""
+                            android:layout_column="1"
+                            android:padding="5dp"/>
+
+                        <TextView
+                            android:id="@+id/towel1"
+                            android:textSize="18sp"
+                            android:inputType="number"
+                            android:textColor="@color/white"
+                            android:layout_column="1"
+                            android:gravity="center"
+                            android:padding="5dp" />
+
+                    </TableRow>
+
+                    <TableRow
+
+                        android:background="#2C2B3F">
+
+                        <TextView
+                            android:text="BLANKET"
+                            android:textSize="18sp"
+                            android:textColor="@color/white"
+                            android:gravity="center"
+                            android:layout_gravity=""
+                            android:layout_column="1"
+                            android:padding="5dp"/>
+
+                        <TextView
+                            android:id="@+id/blanket1"
+                            android:textSize="18sp"
+                            android:inputType="number"
+                            android:textColor="@color/white"
+                            android:layout_column="1"
+                            android:gravity="center"
+                            android:padding="5dp" />
+
+                    </TableRow>
+
+                    <TableRow
+
+                        android:background="#2C2B3F">
+
+                        <TextView
+                            android:text="PILLOW COVER"
+                            android:textSize="18sp"
+                            android:textColor="@color/white"
+                            android:gravity="center"
+                            android:layout_gravity=""
+                            android:layout_column="1"
+                            android:padding="5dp"/>
+
+                        <TextView
+                            android:id="@+id/pillow1"
+                            android:textSize="18sp"
+                            android:inputType="number"
+                            android:textColor="@color/white"
+                            android:layout_column="1"
+                            android:gravity="center"
+                            android:padding="5dp" />
+
+                    </TableRow>
+
+
+                    <TableRow
+                        android:background="#C3F44E"
+                        android:layout_marginTop="10dp">
+
+                        <TextView
+                            android:id="@+id/ctotal"
+                            android:text="TOTAL"
+                            android:textSize="23sp"
+                            android:textColor="@color/black"
+                            android:background="#AC9997"
+                            android:gravity="center"
+                            android:layout_gravity=""
+                            android:layout_column="1"
+                            android:padding="10dp"/>
+
+                        <TextView
+                            android:id="@+id/total1"
+                            android:text=""
+                            android:textSize="23sp"
+                            android:textColor="@color/black"
+                            android:layout_column="1"
+                            android:gravity="center"
+                            android:padding="10dp" />
+
+                    </TableRow>
+
+
+
+
+
+
+                </TableLayout>
+
+
+
+
+
+            </ScrollView>
+
+
+        </LinearLayout>
+
+    <ImageView
+        android:id="@+id/lo"
+        android:layout_width="71dp"
+        android:layout_height="50dp"
+        android:layout_gravity="center"
+        android:src="@drawable/logoo"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/tab" />
+
+    <com.google.android.material.textfield.TextInputLayout
+        style="@style/Widget.MaterialComponents.TextInputLayout.FilledBox"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/lo"
+        tools:ignore="MissingConstraints">
+
+        <com.google.android.material.textview.MaterialTextView
+            android:id="@+id/club"
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:fontFamily="@font/changa_light"
+            android:gravity="center"
+            android:text="POWERED BY OYSTER_KODE"
+            android:textColor="#FFFFFF"
+            android:textSize="20sp"
+            android:textStyle="bold"
+            app:layout_constraintBottom_toBottomOf="parent"
+            tools:ignore="MissingConstraints">
+        </com.google.android.material.textview.MaterialTextView>
+    </com.google.android.material.textfield.TextInputLayout>
+
+
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+
+
